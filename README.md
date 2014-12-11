@@ -1,4 +1,4 @@
-FastRGBGrayscale
+Different RGB to Grayscale conversion methods
 ================
-
-Faster alternative to java.awt.image.ColorConvertOp
+GrayscaleColorConvert: using java.awt.color.ColorSpace;
+GrayscaleWithGetRGB: faster alternative to java.awt.image.ColorConvertOp
