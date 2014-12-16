@@ -1,0 +1,10 @@
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+BufferedImage grayscaleDraw(BufferedImage colorImg){
+    BufferedImage bwImg = new BufferedImage(colorImg.getWidth(), colorImg.getHeight(), BufferedImage.TYPE_BYTE_GRAY);  
+    Graphics2D g = bwImg.getGraphics();  
+    g.drawImage(colorImg, 0, 0, null);  
+    g.dispose();
+    return bwImg;
+}
