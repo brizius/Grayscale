@@ -2,12 +2,12 @@ Different RGB to Grayscale conversion methods
 ================
 GrayscaleWithColorConvert: changes color space using java.awt.color.ColorSpace.
 
-GrayscaleWithDraImage: builds new BufferedImage with TYPE_BYTE_GRAY image type and draw old image into new one using Graphics2D.drawImage.
+GrayscaleWithDraImage: builds new BufferedImage with TYPE_BYTE_GRAY image type and draws old image into new one using Graphics2D.drawImage.
 
-GrayscaleWithGetRGB: get pixel value using getRGB, computes average value (R+G+B)/3 and set new RGB value.
+GrayscaleWithGetRGB: gets pixel value using getRGB, computes average value (R+G+B)/3 and sets new RGB value.
 
 GrayscaleWithGetRaster: same as GrayscaleWithGetRGB but faster because it uses raster from BufferedImage instead of slow getRGB method.
 
-GrayscaleWithGrayFilter: uses GrayFilter to grayscale Image and toBufferedImage() fot conversion.
+GrayscaleWithGrayFilter: uses GrayFilter to grayscale Image and toBufferedImage() for conversion.
 
 
